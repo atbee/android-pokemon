@@ -1,0 +1,313 @@
+[
+    {
+        "id": 1,
+        "name": {
+            "english": "Bulbasaur",
+            "japanese": "フシギダネ"
+        },
+        "type": [
+            "Grass",
+            "Poison"
+        ],
+        "HP": 45,
+        "Attack": 49,
+        "Defense": 49,
+        "Speed": 45,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/001.png"
+    },
+    {
+        "id": 2,
+        "name": {
+            "english": "Ivysaur",
+            "japanese": "フシギソウ"
+        },
+        "type": [
+            "Grass",
+            "Poison"
+        ],
+        "HP": 60,
+        "Attack": 62,
+        "Defense": 63,
+        "Speed": 60,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/002.png"
+    },
+    {
+        "id": 3,
+        "name": {
+            "english": "Venusaur",
+            "japanese": "フシギバナ"
+        },
+        "type": [
+            "Grass",
+            "Poison"
+        ],
+        "HP": 80,
+        "Attack": 82,
+        "Defense": 83,
+        "Speed": 80,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/003.png"
+    },
+    {
+        "id": 4,
+        "name": {
+            "english": "Charmander",
+            "japanese": "ヒトカゲ"
+        },
+        "type": [
+            "Fire"
+        ],
+        "HP": 39,
+        "Attack": 52,
+        "Defense": 43,
+        "Speed": 65,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/004.png"
+    },
+    {
+        "id": 5,
+        "name": {
+            "english": "Charmeleon",
+            "japanese": "リザード"
+        },
+        "type": [
+            "Fire"
+        ],
+        "HP": 58,
+        "Attack": 64,
+        "Defense": 58,
+        "Speed": 80,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/005.png"
+    },
+    {
+        "id": 6,
+        "name": {
+            "english": "Charizard",
+            "japanese": "リザードン"
+        },
+        "type": [
+            "Fire",
+            "Flying"
+        ],
+        "HP": 78,
+        "Attack": 84,
+        "Defense": 78,
+        "Speed": 100,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/006.png"
+    },
+    {
+        "id": 7,
+        "name": {
+            "english": "Squirtle",
+            "japanese": "ゼニガメ"
+        },
+        "type": [
+            "Water"
+        ],
+        "HP": 44,
+        "Attack": 48,
+        "Defense": 65,
+        "Speed": 43,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/007.png"
+    },
+    {
+        "id": 8,
+        "name": {
+            "english": "Wartortle",
+            "japanese": "カメール"
+        },
+        "type": [
+            "Water"
+        ],
+        "HP": 59,
+        "Attack": 63,
+        "Defense": 80,
+        "Speed": 58,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/008.png"
+    },
+    {
+        "id": 9,
+        "name": {
+            "english": "Blastoise",
+            "japanese": "カメックス"
+        },
+        "type": [
+            "Water"
+        ],
+        "HP": 79,
+        "Attack": 83,
+        "Defense": 100,
+        "Speed": 78,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/009.png"
+    },
+    {
+        "id": 10,
+        "name": {
+            "english": "Caterpie",
+            "japanese": "キャタピー"
+        },
+        "type": [
+            "Bug"
+        ],
+        "HP": 45,
+        "Attack": 30,
+        "Defense": 35,
+        "Speed": 45,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/010.png"
+    },
+    {
+        "id": 11,
+        "name": {
+            "english": "Metapod",
+            "japanese": "トランセル"
+        },
+        "type": [
+            "Bug"
+        ],
+        "HP": 50,
+        "Attack": 20,
+        "Defense": 55,
+        "Speed": 30,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/011.png"
+    },
+    {
+        "id": 12,
+        "name": {
+            "english": "Butterfree",
+            "japanese": "バタフリー"
+        },
+        "type": [
+            "Bug",
+            "Flying"
+        ],
+        "HP": 60,
+        "Attack": 45,
+        "Defense": 50,
+        "Speed": 70,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/012.png"
+    },
+    {
+        "id": 13,
+        "name": {
+            "english": "Weedle",
+            "japanese": "ビードル"
+        },
+        "type": [
+            "Bug",
+            "Poison"
+        ],
+        "HP": 40,
+        "Attack": 35,
+        "Defense": 30,
+        "Speed": 50,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/013.png"
+    },
+    {
+        "id": 14,
+        "name": {
+            "english": "Kakuna",
+            "japanese": "コクーン"
+        },
+        "type": [
+            "Bug",
+            "Poison"
+        ],
+        "HP": 45,
+        "Attack": 25,
+        "Defense": 50,
+        "Speed": 35,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/014.png"
+    },
+    {
+        "id": 15,
+        "name": {
+            "english": "Beedrill",
+            "japanese": "スピアー"
+        },
+        "type": [
+            "Bug",
+            "Poison"
+        ],
+        "HP": 65,
+        "Attack": 90,
+        "Defense": 40,
+        "Speed": 75,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/015.png"
+    },
+    {
+        "id": 16,
+        "name": {
+            "english": "Pidgey",
+            "japanese": "ポッポ"
+        },
+        "type": [
+            "Normal",
+            "Flying"
+        ],
+        "HP": 40,
+        "Attack": 45,
+        "Defense": 40,
+        "Speed": 56,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/016.png"
+    },
+    {
+        "id": 17,
+        "name": {
+            "english": "Pidgeotto",
+            "japanese": "ピジョン"
+        },
+        "type": [
+            "Normal",
+            "Flying"
+        ],
+        "HP": 63,
+        "Attack": 60,
+        "Defense": 55,
+        "Speed": 71,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/017.png"
+    },
+    {
+        "id": 18,
+        "name": {
+            "english": "Pidgeot",
+            "japanese": "ピジョット"
+        },
+        "type": [
+            "Normal",
+            "Flying"
+        ],
+        "HP": 83,
+        "Attack": 80,
+        "Defense": 75,
+        "Speed": 101,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/018.png"
+    },
+    {
+        "id": 19,
+        "name": {
+            "english": "Rattata",
+            "japanese": "コラッタ"
+        },
+        "type": [
+            "Normal"
+        ],
+        "HP": 30,
+        "Attack": 56,
+        "Defense": 35,
+        "Speed": 72,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/019.png"
+    },
+    {
+        "id": 20,
+        "name": {
+            "english": "Raticate",
+            "japanese": "ラッタ"
+        },
+        "type": [
+            "Normal"
+        ],
+        "HP": 55,
+        "Attack": 81,
+        "Defense": 60,
+        "Speed": 97,
+        "imageUrl": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/020.png"
+    }
+]

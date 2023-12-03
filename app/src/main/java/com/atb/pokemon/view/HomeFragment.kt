@@ -14,12 +14,10 @@ import com.atb.pokemon.PokemonDetailActivity
 import com.atb.pokemon.R
 import com.atb.pokemon.databinding.FragmentHomeBinding
 import com.atb.pokemon.viewModel.HomeViewModel
+import dagger.hilt.android.AndroidEntryPoint
 
-/**
- * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+
+@AndroidEntryPoint
 class HomeFragment : Fragment() {
     private  lateinit var binding: FragmentHomeBinding
 
@@ -43,6 +41,7 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.pokeball.setOnClickListener {
+            viewModel.getPokemonList()
             val action = R.id.action_homeFragment_to_pokemonDetailFragment
             findNavController().navigate(action)
         }
@@ -51,7 +50,5 @@ class HomeFragment : Fragment() {
             val action = R.id.action_homeFragment_to_pokemonCollectionFragment
             findNavController().navigate(action)
         }
-
-        viewModel.getPokemonList()
     }
 }

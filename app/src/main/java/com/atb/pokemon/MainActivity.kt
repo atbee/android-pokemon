@@ -12,16 +12,5 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        binding.pokeball.setOnClickListener {
-            val intent = Intent(this, PokemonDetailActivity::class.java)
-            intent.putExtra("Name", "Atb")
-            startActivity(intent)
-        }
-
-        binding.backpack.setOnClickListener {
-            val intent = Intent(this, PokemonCollectionActivity::class.java)
-            startActivity(intent)
-        }
     }
 }

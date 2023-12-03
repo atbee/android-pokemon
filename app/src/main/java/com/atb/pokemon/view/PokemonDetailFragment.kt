@@ -25,14 +25,12 @@ class PokemonDetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentPokemonDetailBinding.inflate(inflater, container, true)
+        binding = FragmentPokemonDetailBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        TODO()
         binding.nameTv.text = "name"
     }
 }

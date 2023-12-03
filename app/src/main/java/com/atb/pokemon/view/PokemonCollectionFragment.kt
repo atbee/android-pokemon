@@ -27,7 +27,7 @@ class PokemonCollectionFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentPokemonCollectionBinding.inflate(inflater, container, true)
+        binding = FragmentPokemonCollectionBinding.inflate(inflater, container, false)
         return binding.root
     }
 

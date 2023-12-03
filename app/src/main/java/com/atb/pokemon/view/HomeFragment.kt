@@ -2,13 +2,18 @@ package com.atb.pokemon.view
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.atb.pokemon.PokemonCollectionActivity
 import com.atb.pokemon.PokemonDetailActivity
+import com.atb.pokemon.R
 import com.atb.pokemon.databinding.FragmentHomeBinding
+import com.atb.pokemon.viewModel.HomeViewModel
 
 /**
  * A simple [Fragment] subclass.
@@ -17,6 +22,9 @@ import com.atb.pokemon.databinding.FragmentHomeBinding
  */
 class HomeFragment : Fragment() {
     private  lateinit var binding: FragmentHomeBinding
+
+    val viewModel: HomeViewModel by viewModels()
+//    val viewModel: HomeViewModel by activityViewModels() // Depends on activity
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -27,7 +35,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentHomeBinding.inflate(inflater, container, true)
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -35,14 +43,15 @@ class HomeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.pokeball.setOnClickListener {
-            val intent = Intent(activity, PokemonDetailActivity::class.java)
-            intent.putExtra("Name", "Atb")
-            startActivity(intent)
+            val action = R.id.action_homeFragment_to_pokemonDetailFragment
+            findNavController().navigate(action)
         }
 
         binding.backpack.setOnClickListener {
-            val intent = Intent(activity, PokemonCollectionActivity::class.java)
-            startActivity(intent)
+            val action = R.id.action_homeFragment_to_pokemonCollectionFragment
+            findNavController().navigate(action)
         }
+
+        viewModel.getPokemonList()
     }
 }

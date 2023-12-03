@@ -1,28 +1,27 @@
 package com.atb.pokemon.view
 
-import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
-import com.atb.pokemon.PokemonCollectionActivity
-import com.atb.pokemon.PokemonDetailActivity
 import com.atb.pokemon.R
 import com.atb.pokemon.databinding.FragmentHomeBinding
 import com.atb.pokemon.viewModel.HomeViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collectLatest
+import kotlinx.coroutines.launch
 
 
 @AndroidEntryPoint
 class HomeFragment : Fragment() {
     private  lateinit var binding: FragmentHomeBinding
 
-    val viewModel: HomeViewModel by viewModels()
-//    val viewModel: HomeViewModel by activityViewModels() // Depends on activity
+    private val viewModel: HomeViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,6 +38,12 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        lifecycleScope.launch {
+            viewModel.uistate.collectLatest {
+                Log.d(HomeFragment::class.java.simpleName, "$it")
+            }
+        }
 
         binding.pokeball.setOnClickListener {
             viewModel.getPokemonList()
